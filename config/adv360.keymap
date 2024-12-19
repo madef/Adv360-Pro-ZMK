@@ -63,7 +63,7 @@
  &kp F1          &kp F2                &kp F3                 &kp F4            &kp F5         &kp F6                       &tog 1                                                   &mo 3       &kp F7           &kp F8  &kp F9    &kp F10  &kp F11  &kp F12
  &trans   &kp LESS_THAN             &kp EQUAL              &kp MINUS  &kp GREATER_THAN  &kp SEMICOLON             &kp SINGLE_QUOTE                                                   &none       &trans           &trans  &trans     &trans   &trans   &trans
  &trans  &kp LEFT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp RIGHT_BRACE      &kp UNDER            &kp DOUBLE_QUOTES  &trans  &trans                  &trans  &trans   &none     &kp LEFT         &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans
- &trans          &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS         &kp COLON       &kp PIPE                                       &trans                  &trans                  &kp LA(TAB)  &kp LS(LA(TAB))   &none     &trans   &trans   &trans
+ &trans      &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS         &kp COLON       &kp PIPE                                       &trans                  &trans                  &kp LA(TAB)  &kp LS(LA(TAB))   &none     &trans   &trans   &trans
  &trans          &trans             &kp SLASH          &kp BACKSLASH     &kp AMPERSAND                                      &trans  &trans  &trans                  &trans  &trans  &trans                        &trans  &trans     &trans   &trans   &trans
             >;
         };
