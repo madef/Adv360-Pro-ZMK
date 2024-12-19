@@ -2,7 +2,7 @@ macro_fleche: macro_fleche{
 compatible = "zmk,behavior-macro";
 label = "macro_fleche";
 #binding-cells = <0>;
-bindings = <&kp MINUS>, <&kp GREATER_THAN>;
+bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
 };
 macro_rb2: macro_rb2{
 compatible = "zmk,behavior-macro";
