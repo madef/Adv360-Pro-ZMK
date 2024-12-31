@@ -1,3 +1,9 @@
+macro_double_space: macro_double_space{
+compatible = "zmk,behavior-macro";
+label = "macro_double_space";
+#binding-cells = <0>;
+bindings = <&kp SPACE>, <&kp SPACE>;
+};
 macro_vim_cmd: macro_vim_cmd{
 compatible = "zmk,behavior-macro";
 label = "macro_vim_cmd";
