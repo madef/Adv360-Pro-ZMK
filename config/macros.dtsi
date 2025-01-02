@@ -2,7 +2,7 @@ macro_tab_refresh: macro_tab_refresh{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_refresh";
 #binding-cells = <0>;
-bindings = <&kp LA>, <&kp LC(LS(R))>;
+bindings = <&kp LA(TAB)>, <&kp LC(LS(R))>;
 };
 macro_double_space: macro_double_space{
 compatible = "zmk,behavior-macro";
