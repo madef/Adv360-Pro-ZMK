@@ -64,7 +64,7 @@
  &macro_double_space  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS              &none            &none        &none                &trans                                                          &none     &trans    &trans         &trans                &trans                 &trans             &trans
               &trans        &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &none                &trans   &trans  &trans                  &trans  &trans  &kp LC(LEFT)   &kp LEFT  &kp DOWN         &kp UP             &kp RIGHT          &kp LC(RIGHT)  &kp DOUBLE_QUOTES
               &trans                &kp LT       &kp GREATER_THAN              &none            &none     &kp PIPE                                 &trans                  &trans                        &kp LC(N)     &none  &kp SEMICOLON             &kp COLON          &kp BACKSLASH             &trans
-              &trans             &kp TILDE          &kp LC(LS(R))             &kp LT           &kp GT                         &kp DELETE  &kp DEL  &trans                  &trans  &trans        &trans                &none          &none    &macro_backslash_g                  &none             &trans
+              &trans             &kp TILDE          &kp LC(LS(R))             &kp LT           &kp GT                         &kp DELETE  &kp DEL  &trans                  &trans  &trans        &trans                &none          &none                 &none     &macro_backslash_g             &trans
             >;
         };
 
