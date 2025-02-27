@@ -67,6 +67,13 @@
             bindings = <&kp SEMICOLON &kp ENTER>;
             label = "SEMICOLON_ENTER";
         };
+
+        celsius: celsius {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(LS(SINGLE_QUOTE)) &kp LS(C)>;
+            label = "CELSIUS";
+        };
     };
 
     keymap {
@@ -98,9 +105,9 @@
             display-name = "Fn";
             bindings = <
 &kp PLUS       &kp EXCLAMATION       &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT  &mo 1                                                   &mo 3         &kp CARET  &kp AMPS  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&double_space  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &none            &none        &trans                                                  &none         &trans     &trans    &trans         &trans                &trans                 &trans
+&double_space  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none              &none            &none        &trans                                                  &none         &trans     &trans    &kp LS(I)      &kp LS(O)             &kp LS(P)              &trans
 &trans         &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none        &trans      &trans   &trans      &trans  &trans         &kp LC(LEFT)  &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT             &kp LC(RIGHT)          &kp DOUBLE_QUOTES
-&trans         &kp LT                &kp GREATER_THAN       &none              &none            &kp PIPE                          &trans      &trans                               &kp LC(N)  &none     &kp SEMICOLON  &kp COLON             &kp BACKSLASH          &trans
+&trans         &kp LT                &kp GREATER_THAN       &celsius           &none            &kp PIPE                          &trans      &trans                               &kp LC(N)  &none     &kp SEMICOLON  &kp COLON             &kp BACKSLASH          &trans
 &trans         &kp TILDE             &kp LC(LS(R))          &kp LT             &kp GT                        &kp DELETE  &kp DEL  &trans      &trans  &kp LS(ENTER)  &trans                   &none     &none          &none                 &backslash_g           &trans
             >;
         };
