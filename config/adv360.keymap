@@ -81,6 +81,34 @@
             bindings = <&kp ESCAPE &kp I &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
             label = "VIM_PHP_IF";
         };
+
+        vim_php_else: vim_php_else {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp I &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp LS(O)>;
+            label = "VIM_PHP_ELSE";
+        };
+
+        vim_php_elseif: vim_php_elseif {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp I &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
+            label = "VIM_PHP_ELSEIF";
+        };
+
+        vim_php_switch: vim_php_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp I &kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
+            label = "VIM_PHP_SWITCH";
+        };
+
+        vim_php_match: vim_php_match {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp I &kp M &kp A &kp T &kp C &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp SEMI &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
+            label = "VIM_PHP_MATCH";
+        };
     };
 
     keymap {
@@ -122,11 +150,11 @@
         layer_mod {
             display-name = "Mod";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none        &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &vim_php_if  &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none        &none  &none  &none
-&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none        &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC   &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3     &bt BT_SEL 4  &none                                                  &trans                  &none  &none           &none        &none  &none  &none
+&none  &none         &none            &vim_php_else  &vim_php_elseif  &none         &bootloader                                            &bootloader             &none  &none           &vim_php_if  &none  &none  &none
+&none  &none         &vim_php_switch  &none          &none            &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none           &none        &none  &none  &none
+&none  &none         &none            &none          &none            &none                             &none      &none                                           &none  &vim_php_match  &none        &none  &none  &none
+&none  &none         &none            &none          &none                          &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC      &bl BL_DEC   &none  &none  &none
             >;
         };
 
