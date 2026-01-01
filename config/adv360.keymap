@@ -78,35 +78,35 @@
         vim_php_if: vim_php_if {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N4 &kp L &kp I>;
             label = "VIM_PHP_IF";
         };
 
         vim_php_else: vim_php_else {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp LS(O)>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp LS(O)>;
             label = "VIM_PHP_ELSE";
         };
 
         vim_php_elseif: vim_php_elseif {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N8 &kp L &kp I>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp RBRC &kp SPACE &kp E &kp L &kp S &kp E &kp I &kp F &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp NUMBER_1 &kp N0 &kp L &kp I>;
             label = "VIM_PHP_ELSEIF";
         };
 
         vim_php_switch: vim_php_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N8 &kp L &kp I>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp ESCAPE &kp K &kp N8 &kp L &kp I>;
             label = "VIM_PHP_SWITCH";
         };
 
         vim_php_match: vim_php_match {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp M &kp A &kp T &kp C &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp SEMI &kp ESCAPE &kp K &kp N8 &kp L &kp I>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp M &kp A &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp SEMI &kp ESCAPE &kp K &kp N8 &kp L &kp I>;
             label = "VIM_PHP_MATCH";
         };
     };
