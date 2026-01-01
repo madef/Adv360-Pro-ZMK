@@ -106,7 +106,7 @@
         vim_php_match: vim_php_match {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp LS(A) &kp M &kp A &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp SEMI &kp ESCAPE &kp K &kp FSLH &kp RPAR &kp I>;
+            bindings = <&kp ESCAPE &kp LS(A) &kp M &kp A &kp T &kp C &kp H &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp LBRC &kp ENTER &kp RIGHT_BRACE &kp SEMI &kp ESCAPE &kp K &kp FSLH &kp RPAR &kp RET &kp I>;
             label = "VIM_PHP_MATCH";
         };
     };
